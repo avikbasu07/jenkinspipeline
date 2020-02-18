@@ -8,14 +8,17 @@ stages{
             }
         }
 		
-		stage('Build'){
+	stage('Build'){
             steps {
-			echo 'Now Building ...'
+		echo 'Now Building ...'
             }
         }
 
         stage ('Deployments'){
+	     steps {
 		echo 'Now Deploying ...'
+	     }
         }
+	
     }
 }
